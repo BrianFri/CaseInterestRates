@@ -20,7 +20,7 @@ ___
 
 ### Data Overview
 
-The data we were given had only about 2,000 entries, with 6 columns of data. We decided that interest rate was th target, and `fico_range`, `amount_requested`, and `loan_length` were the most important columns to look into. The only cleaning that needed to be done was converting the `fico_range` column into a single integer value to be usable.
+The data we were given had only about 2,000 entries, with 5 columns of data. We decided that interest rate was the target, and `fico_range`, `amount_requested`, and `loan_length` were the most important columns to look into. The only cleaning that needed to be done was converting the `fico_range` column into a single integer value to be usable.
 
 
 ### Exploratory Insights
@@ -51,7 +51,13 @@ ___
 
 We found **FICO score** to be the most influential of all the features we looked into. After some testing using both linear regressions and decision tree regressions, we decided that the decision tree regression had the best score.
 
-Our final decision tree score was **0.735**, using **6** as the depth measure.
+Our final decision tree score was **0.735**, using **6** as the depth measure. We also found feature importances which are shown in the below table.
+
+| Feature | Importance Score |
+| -------- | -------- |
+| FICO Score | 0.6807   |
+| Loan Length  | 0.2162   |  
+| Amount Requested | 0.1030|
 
 Finally, we looked into the residual values, using plots to visualize them. Comparing the predicted vs. the residual rates, the spreads were pretty even across both the scatter plot and histogram.
 
