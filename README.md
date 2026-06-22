@@ -51,7 +51,7 @@ ___
 
 We found **FICO score** to be the most influential of all the features we looked into. After some testing using both linear regressions and decision tree regressions, we decided that the decision tree regression had the best score.
 
-Our final decision tree score was **0.735**, using **5** as the depth measure.
+Our final decision tree score was **0.735**, using **6** as the depth measure.
 
 Finally, we looked into the residual values, using plots to visualize them. Comparing the predicted vs. the residual rates, the spreads were pretty even across both the scatter plot and histogram.
 
